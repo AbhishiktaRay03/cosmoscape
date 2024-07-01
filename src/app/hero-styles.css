@@ -28,6 +28,11 @@
         background-image: url('/images/space-2.jpg');
         animation: animateBg 50s linear infinite;
     }
+    .explore-button:hover {
+        box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.8);
+        scale:calc(1.1);
+        border: 2px;
+    }
 
     @keyframes animateBg {
 
