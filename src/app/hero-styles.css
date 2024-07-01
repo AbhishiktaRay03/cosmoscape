@@ -4,20 +4,20 @@
 
 /* Base styles */
 @layer base {
-    * {
+    .hero-section * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
 
-    body {
+    .hero-section body {
         overflow: hidden;
     }
 }
 
 /* Component styles */
 @layer components {
-    section {
+    .hero-section section {
         position: absolute;
         top: 0;
         left: 0;
@@ -28,9 +28,10 @@
         background-image: url('/images/space-2.jpg');
         animation: animateBg 50s linear infinite;
     }
-    .explore-button:hover {
+
+    .hero-section .explore-button:hover {
         box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.8);
-        scale:calc(1.1);
+        scale: calc(1.1);
         border: 2px;
     }
 
@@ -46,7 +47,7 @@
         }
     }
 
-    span {
+    .hero-section span {
         position: absolute;
         background-color: white;
         border-radius: 50%;
@@ -54,10 +55,9 @@
         height: 4px;
         box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 1);
         animation: animate 3s linear infinite;
-        
     }
 
-    span::before {
+    .hero-section span::before {
         content: '';
         position: absolute;
         top: 50%;
@@ -86,70 +86,70 @@
 
 /* Utility styles */
 @layer utilities {
-    .animate-1 {
+    .hero-section .animate-1 {
         top: 0;
         right: 0;
         animation-delay: 0s;
         animation-duration: 1s;
     }
 
-    .animate-2 {
+    .hero-section .animate-2 {
         top: 0;
         right: 80px;
         animation-delay: 0.2s;
         animation-duration: 3s;
     }
 
-    .animate-3 {
+    .hero-section .animate-3 {
         top: 80px;
         right: 0;
         animation-delay: 0.4s;
         animation-duration: 2s;
     }
 
-    .animate-4 {
+    .hero-section .animate-4 {
         top: 0;
         right: 180px;
         animation-delay: 0.6s;
         animation-duration: 1.5s;
     }
 
-    .animate-5 {
+    .hero-section .animate-5 {
         top: 0;
         right: 400px;
         animation-delay: 0.8s;
         animation-duration: 2.5s;
     }
 
-    .animate-6 {
+    .hero-section .animate-6 {
         top: 0;
         right: 600px;
         animation-delay: 1s;
         animation-duration: 3s;
     }
 
-    .animate-7 {
+    .hero-section .animate-7 {
         top: 300px;
         right: 0;
         animation-delay: 1s;
         animation-duration: 1.75s;
     }
 
-    .animate-8 {
+    .hero-section .animate-8 {
         top: 0;
         right: 700px;
         animation-delay: 1.4s;
         animation-duration: 1.25s;
     }
 
-    .animate-9 {
+    .hero-section .animate-9 {
         top: 0;
         right: 1000px;
         animation-delay: 0.75s;
         animation-duration: 2.25s;
     }
 
-    .animate-10 {
+    .hero-section .animate-10 {
         top: 0;
         right: 1000px;
         animation-delay: 2.75s;
