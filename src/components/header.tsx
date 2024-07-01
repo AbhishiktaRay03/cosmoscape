@@ -42,39 +42,39 @@ const Header = () => {
       <div className="justify-center gap-12 mx-auto my-2 font-extrabold text-xl hidden md:flex">
         <Link
           href="/"
-          className="font-normal hover:text-zinc-500 dark:hover:text-blue-600 hover:transition-all hover:scale-110"
+          className="font-normal hover:text-zinc-500 dark:hover:text-purple-600 hover:transition-all hover:scale-110"
         >
           Home
         </Link>
         <Link
           href="/about"
-          className="font-normal hover:text-zinc-500 dark:hover:text-blue-600 hover:transition-all hover:scale-110"
+          className="font-normal hover:text-zinc-500 dark:hover:text-purple-600 hover:transition-all hover:scale-110"
         >
           About
         </Link>
         <div className="relative inline-flex items-center">
           <Link
             href="/winner"
-            className="font-normal hover:text-zinc-500 dark:hover:text-blue-600 hover:transition-all hover:scale-110"
+            className="font-normal hover:text-zinc-500 dark:hover:text-purple-600 hover:transition-all hover:scale-110"
           >
             Cosmoguide
           </Link>
         </div>
         <Link
           href="/showcase"
-          className="font-normal hover:text-zinc-500 dark:hover:text-blue-600 hover:transition-all hover:scale-110"
+          className="font-normal hover:text-zinc-500 dark:hover:text-purple-600 hover:transition-all hover:scale-110"
         >
           Blogs
         </Link>
         <Link
           href="/about"
-          className="font-normal hover:text-zinc-500 dark:hover:text-blue-600 hover:transition-all hover:scale-110"
+          className="font-normal hover:text-zinc-500 dark:hover:text-purple-600 hover:transition-all hover:scale-110"
         >
           Community
         </Link>
         <Link
           href="/about"
-          className="font-normal hover:text-zinc-500 dark:hover:text-blue-600 hover:transition-all hover:scale-110"
+          className="font-normal hover:text-zinc-500 dark:hover:text-purple-600 hover:transition-all hover:scale-110"
         >
           Contact
         </Link>
