@@ -54,26 +54,26 @@ const Header = () => {
         </Link>
         <div className="relative inline-flex items-center">
           <Link
-            href="/winner"
+            href="/"
             className="font-normal hover:text-zinc-500 dark:hover:text-purple-600 hover:transition-all hover:scale-110"
           >
             Cosmoguide
           </Link>
         </div>
         <Link
-          href="/showcase"
+          href="/blog"
           className="font-normal hover:text-zinc-500 dark:hover:text-purple-600 hover:transition-all hover:scale-110"
         >
           Blogs
         </Link>
         <Link
-          href="/about"
+          href="/"
           className="font-normal hover:text-zinc-500 dark:hover:text-purple-600 hover:transition-all hover:scale-110"
         >
           Community
         </Link>
         <Link
-          href="/about"
+          href="/"
           className="font-normal hover:text-zinc-500 dark:hover:text-purple-600 hover:transition-all hover:scale-110"
         >
           Contact
