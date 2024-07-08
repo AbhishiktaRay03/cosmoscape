@@ -60,39 +60,39 @@ export function Blog() {
 }
 export const projects = [
   {
-    title: "Stripe",
+    title: "Mars-habitable or not?",
     description:
-      "A technology company that builds economic infrastructure for the internet.",
-    link: "https://stripe.com",
+      "The surface of Mars is barren and inhospitable, but perhaps it wasn't always that way. Billions of years ago, when life emerged on Earth, the climate of Mars could have been Earth-like as well, with a thicker atmosphere than today and oceans of liquid water.",
+    link: "/",
   },
   {
-    title: "Netflix",
+    title: "Asteroids",
     description:
-      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
-    link: "https://netflix.com",
+      "Ceres has the shape of a flattened sphere with an equatorial radius of 490 km and a polar radius of 455 km, equivalent in volume to a sphere with a diameter of 940 km—i.e., about 27 percent that of Earth's Moon.",
+    link: "/",
   },
   {
-    title: "Google",
+    title: "SUN-the star!",
     description:
-      "A multinational technology company that specializes in Internet-related services and products.",
+      "The Sun is the star at the center of the Solar System. It is a massive, nearly perfect sphere of hot plasma, heated to incandescence by nuclear fusion ",
     link: "https://google.com",
   },
   {
-    title: "Meta",
+    title: "Pluto-the dwarf planet",
     description:
-      "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
-    link: "https://meta.com",
+      "It is the ninth-largest and tenth-most-massive known object to directly orbit the Sun. It is the largest known trans-Neptunian object by volume",
+    link: "/",
   },
   {
-    title: "Amazon",
+    title: "Eclipses",
     description:
-      "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
-    link: "https://amazon.com",
+      "It is the ninth-largest and tenth-most-massive known object to directly orbit the Sun. It is the largest known trans-Neptunian object by volume",
+    link: "/",
   },
   {
-    title: "Microsoft",
+    title: "Space station",
     description:
-      "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
-    link: "https://microsoft.com",
+      "The International Space Station Program brings together international flight crews, multiple launch vehicles, globally distributed launch and flight operations,",
+    link: "/",
   },
 ];
