@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { HoverEffect } from "../ui/card-hover-effect";
 import header from "../header";
+import Footer from "../footer";
 import { Button } from "../ui/moving-border";
 import { HoverBorderGradient } from "../ui/hover-border-gradient";
 
@@ -68,6 +69,7 @@ export function Blog() {
           <HoverEffect items={projects} />
         </div>
       </div>
+      <Footer />
     </section>
   );
 }
