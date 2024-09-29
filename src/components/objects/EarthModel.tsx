@@ -18,7 +18,7 @@ const EarthModel = () => {
     <mesh ref={earthRef} scale={0.8}>
       {" "}
       {/* Scale down the Earth model */}
-      <sphereGeometry args={[1, 32, 32]} />
+      <sphereGeometry args={[0.8, 32, 32]} />
       <meshStandardMaterial map={texture} metalness={0.1} roughness={0.7} />
     </mesh>
   );

@@ -2,13 +2,41 @@
 import React, { useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
+import SunModel from "../../components/objects/SunModel";
+import MoonModel from "../../components/objects/MoonModel";
+import MercuryModel from "../../components/objects/MercuryModel";
+import VenusModel from "../../components/objects/VenusModel";
 import EarthModel from "../../components/objects/EarthModel";
 import MarsModel from "../../components/objects/MarsModel";
+import JupiterModel from "../../components/objects/JupiterModel";
+import SaturnModel from "../../components/objects/SaturnModel";
+import UranusModel from "../../components/objects/UranusModel";
+import NeptuneModel from "../../components/objects/NeptuneModel";
 import PlanetInfo from "../sections/planetinfo";
 import { Planet } from "../planet";
 import Header from "../header";
 
 const planets: Planet[] = [
+  {
+    name: "Sun",
+    component: SunModel,
+    texture: "/textures/sun.jpg",
+  },
+  {
+    name: "Moon",
+    component: MoonModel,
+    texture: "/textures/moon.jpg",
+  },
+  {
+    name: "Mercury",
+    component: MercuryModel,
+    texture: "/textures/mercury.jpg",
+  },
+  {
+    name: "Venus",
+    component: VenusModel,
+    texture: "/textures/venus.jpg",
+  },
   {
     name: "Earth",
     component: EarthModel,
@@ -19,7 +47,26 @@ const planets: Planet[] = [
     component: MarsModel,
     texture: "/textures/mars.jpg",
   },
-  // Add more planets here
+  {
+    name: "Jupiter",
+    component: JupiterModel,
+    texture: "/textures/jupiter.jpg",
+  },
+  {
+    name: "Saturn",
+    component: SaturnModel,
+    texture: "/textures/saturn.jpg",
+  },
+  {
+    name: "Uranus",
+    component: UranusModel,
+    texture: "/textures/uranus.jpg",
+  },
+  {
+    name: "Neptune",
+    component: NeptuneModel,
+    texture: "/textures/neptune.jpg",
+  },
 ];
 
 const Cosmo: React.FC = () => {
