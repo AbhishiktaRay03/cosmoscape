@@ -82,14 +82,14 @@ const Cosmo: React.FC = () => {
         backgroundPosition: "center",
       }}
     >
-        <Header />
+      <Header />
       {/* Hamburger Menu */}
       <div className="absolute top-16 left-4 z-10">
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="text-white text-2xl border border-white rounded-lg p-2"
         >
-          ☰ 
+          ☰
         </button>
         {menuOpen && (
           <div className="absolute mt-2 bg-slate-900 rounded shadow-lg">
@@ -118,7 +118,11 @@ const Cosmo: React.FC = () => {
       </div>
 
       {/* Planet Viewer */}
-      <div className="w-1/2 h-full mt-8">
+      <div className="w-1/2 h-full mt-16 relative">
+        {/* Instruction Text */}
+        <p className="text-md mt-16 right-56 absolute text-gray-500 bg-black bg-opacity-50 py-2">
+          *Click and drag to rotate model*
+        </p>
         <Canvas camera={{ position: [0, 0, 2.5], fov: 45 }}>
           <ambientLight intensity={0.5} />
           <pointLight position={[10, 10, 10]} />

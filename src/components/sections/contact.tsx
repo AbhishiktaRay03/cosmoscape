@@ -22,7 +22,11 @@ export const ContactForm: React.FC = () => {
           </h1>
 
           {/* Form */}
-          <form className="space-y-6">
+          <form
+            action="https://formspree.io/f/mldrqwab" // Replace with your Formspree form ID
+            method="POST"
+            className="space-y-6"
+          >
             {/* First and Last Name */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="flex flex-col">
@@ -31,8 +35,10 @@ export const ContactForm: React.FC = () => {
                 </label>
                 <input
                   type="text"
+                  name="firstName" // Add name attribute
                   placeholder="First Name"
                   className="p-3 bg-transparent border-b border-gray-400 text-white focus:outline-none"
+                  required
                 />
               </div>
               <div className="flex flex-col">
@@ -41,8 +47,10 @@ export const ContactForm: React.FC = () => {
                 </label>
                 <input
                   type="text"
+                  name="lastName" // Add name attribute
                   placeholder="Last Name"
                   className="p-3 bg-transparent border-b border-gray-400 text-white focus:outline-none"
+                  required
                 />
               </div>
             </div>
@@ -55,8 +63,10 @@ export const ContactForm: React.FC = () => {
                 </label>
                 <input
                   type="email"
+                  name="email" // Add name attribute
                   placeholder="Email"
                   className="p-3 bg-transparent border-b border-gray-400 text-white focus:outline-none"
+                  required
                 />
               </div>
               <div className="flex flex-col">
@@ -65,8 +75,10 @@ export const ContactForm: React.FC = () => {
                 </label>
                 <input
                   type="text"
+                  name="mobile" // Add name attribute
                   placeholder="Mobile"
                   className="p-3 bg-transparent border-b border-gray-400 text-white focus:outline-none"
+                  required
                 />
               </div>
             </div>
@@ -77,9 +89,11 @@ export const ContactForm: React.FC = () => {
                 Type Your Message Here...
               </label>
               <textarea
+                name="message" // Add name attribute
                 placeholder="Type Your Message Here..."
                 className="p-3 bg-transparent border-b border-gray-400 text-white focus:outline-none"
                 rows={4}
+                required
               ></textarea>
             </div>
 

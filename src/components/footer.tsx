@@ -84,8 +84,8 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/services" legacyBehavior>
-                  <a className="hover:text-gray-400">Services</a>
+                <Link href="/cosmo" legacyBehavior>
+                  <a className="hover:text-gray-400">Cosmoguide</a>
                 </Link>
               </li>
             </ul>

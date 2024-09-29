@@ -15,7 +15,8 @@ const SaturnModel = () => {
       saturnRef.current.rotation.y += 0.005; // Saturn's slow rotation
     }
     if (ringsRef.current) {
-      ringsRef.current.rotation.z = Math.PI / 4; // Tilt the rings
+      
+      ringsRef.current.rotation.z = Math.PI / 4; // Tilt the rings at a 45-degree angle
     }
   });
 
