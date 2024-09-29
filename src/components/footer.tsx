@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { Facebook, Twitter, Linkedin, Instagram, Github } from "lucide-react";
+import Image from "next/image";
 
 const Footer = () => {
   const [isMounted, setIsMounted] = useState(false);
@@ -15,10 +16,12 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center mb-2">
           <div className="flex items-center space-x-3">
             {/* Logo Image */}
-            <img
+            <Image
               src="/images/logo.png"
-              alt="Logo"
-              className="w-12 h-12 object-contain" // Ensures the logo scales nicely inside the box
+              alt="Cosmoscape Logo"
+              width={50}
+              height={50}
+              className="cursor-pointer"
             />
           </div>
 

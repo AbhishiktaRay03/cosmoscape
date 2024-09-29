@@ -49,7 +49,7 @@ const About = () => {
               <p className="text-lg mb-4 text-gray-300">
                 Cosmoscape is a team of passionate space enthusiasts and
                 educators dedicated to bringing the wonders of the universe to
-                everyone. Founded in 2024, we've been on a mission to make space
+                everyone. Founded in 2024, we&apos;ve been on a mission to make space
                 exploration accessible and exciting for all.
               </p>
               <p className="text-lg text-gray-300">

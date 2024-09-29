@@ -36,8 +36,10 @@ export function HoverBorderGradient({
   const movingMap: Record<Direction, string> = {
     TOP: "radial-gradient(20.7% 50% at 50% 0%, hsl(0, 0%, 100%) 0%, rgba(255, 255, 255, 0) 100%)",
     LEFT: "radial-gradient(16.6% 43.1% at 0% 50%, hsl(0, 0%, 100%) 0%, rgba(255, 255, 255, 0) 100%)",
-    BOTTOM: "radial-gradient(20.7% 50% at 50% 100%, hsl(0, 0%, 100%) 0%, rgba(255, 255, 255, 0) 100%)",
-    RIGHT: "radial-gradient(16.2% 41.199999999999996% at 100% 50%, hsl(0, 0%, 100%) 0%, rgba(255, 255, 255, 0) 100%)",
+    BOTTOM:
+      "radial-gradient(20.7% 50% at 50% 100%, hsl(0, 0%, 100%) 0%, rgba(255, 255, 255, 0) 100%)",
+    RIGHT:
+      "radial-gradient(16.2% 41.199999999999996% at 100% 50%, hsl(0, 0%, 100%) 0%, rgba(255, 255, 255, 0) 100%)",
   };
 
   const highlight =
@@ -50,7 +52,7 @@ export function HoverBorderGradient({
       }, duration * 1000);
       return () => clearInterval(interval);
     }
-  }, [hovered]);
+  }, [hovered, duration, rotateDirection]);
 
   return (
     <Tag
@@ -64,11 +66,18 @@ export function HoverBorderGradient({
       style={{ scale: hovered ? 1.05 : 1 }} // Control scale with style attribute
       {...props}
     >
-      <div className={cn("w-auto text-white z-10 bg-gray-700 px-4 py-2 rounded-[inherit]", className)}>
+      <div
+        className={cn(
+          "w-auto text-white z-10 bg-gray-700 px-4 py-2 rounded-[inherit]",
+          className
+        )}
+      >
         {children}
       </div>
       <motion.div
-        className={cn("flex-none inset-0 overflow-hidden absolute z-0 rounded-[inherit]")}
+        className={cn(
+          "flex-none inset-0 overflow-hidden absolute z-0 rounded-[inherit]"
+        )}
         style={{
           filter: "blur(2px)",
           position: "absolute",
@@ -77,7 +86,9 @@ export function HoverBorderGradient({
         }}
         initial={{ background: movingMap[direction] }}
         animate={{
-          background: hovered ? [movingMap[direction], highlight] : movingMap[direction],
+          background: hovered
+            ? [movingMap[direction], highlight]
+            : movingMap[direction],
         }}
         transition={{ ease: "linear", duration: duration ?? 1 }}
       />
