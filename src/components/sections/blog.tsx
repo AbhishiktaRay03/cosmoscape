@@ -19,7 +19,11 @@ export function Blog() {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   return (
-    <section className="bg-black min-h-screen pb-16 overflow-hidden">
+    <section className="bg-black min-h-screen pb-16 overflow-hidden" style={{
+        backgroundImage: "url(/images/dark-sky.jpeg)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}>
       {header()}
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-center mt-20 mb-12">

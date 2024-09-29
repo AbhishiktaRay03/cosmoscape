@@ -10,12 +10,14 @@ const EarthModel = () => {
   // Rotate the Earth model every frame
   useFrame(() => {
     if (earthRef.current) {
-      earthRef.current.rotation.y += 0.007; // Adjust this value for faster/slower rotation
+      earthRef.current.rotation.y += 0.005; // Adjust this value for faster/slower rotation
     }
   });
 
   return (
-    <mesh ref={earthRef}>
+    <mesh ref={earthRef} scale={0.8}>
+      {" "}
+      {/* Scale down the Earth model */}
       <sphereGeometry args={[1, 32, 32]} />
       <meshStandardMaterial map={texture} metalness={0.1} roughness={0.7} />
     </mesh>

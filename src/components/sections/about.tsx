@@ -16,7 +16,14 @@ const About = () => {
   }, [controls]);
 
   return (
-    <section className="bg-black min-h-screen text-white overflow-hidden">
+    <section
+      className="bg-black min-h-screen text-white overflow-hidden"
+      style={{
+        backgroundImage: "url(/images/dark-sky.jpeg)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
       {header()}
       <div className="container mx-auto px-8 py-16 max-w-6xl">
         <motion.div
