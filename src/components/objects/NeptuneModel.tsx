@@ -9,7 +9,7 @@ const NeptuneModel = () => {
 
   useFrame(() => {
     if (neptuneRef.current) {
-      neptuneRef.current.rotation.y += 0.003; // Similar to Uranus in speed
+      neptuneRef.current.rotation.y += 0.002; // Similar to Uranus in speed
     }
   });
 

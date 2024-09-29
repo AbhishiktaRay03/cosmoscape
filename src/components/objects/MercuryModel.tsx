@@ -9,7 +9,7 @@ const MercuryModel = () => {
 
   useFrame(() => {
     if (mercuryRef.current) {
-      mercuryRef.current.rotation.y += 0.006; // Faster rotation for Mercury
+      mercuryRef.current.rotation.y += 0.002; // Faster rotation for Mercury
     }
   });
 

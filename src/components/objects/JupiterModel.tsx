@@ -9,7 +9,7 @@ const JupiterModel = () => {
 
   useFrame(() => {
     if (jupiterRef.current) {
-      jupiterRef.current.rotation.y += 0.003; // Moderate rotation for Jupiter
+      jupiterRef.current.rotation.y += 0.002; // Moderate rotation for Jupiter
     }
   });
 

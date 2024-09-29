@@ -9,7 +9,7 @@ const MoonModel = () => {
 
   useFrame(() => {
     if (moonRef.current) {
-      moonRef.current.rotation.y += 0.003; // Slightly faster for the Moon
+      moonRef.current.rotation.y += 0.002; // Slightly faster for the Moon
     }
   });
 

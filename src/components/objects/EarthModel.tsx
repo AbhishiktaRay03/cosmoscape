@@ -10,7 +10,7 @@ const EarthModel = () => {
   // Rotate the Earth model every frame
   useFrame(() => {
     if (earthRef.current) {
-      earthRef.current.rotation.y += 0.005; // Adjust this value for faster/slower rotation
+      earthRef.current.rotation.y += 0.002; // Adjust this value for faster/slower rotation
     }
   });
 

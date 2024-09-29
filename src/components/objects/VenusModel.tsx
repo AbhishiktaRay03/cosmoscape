@@ -9,7 +9,7 @@ const VenusModel = () => {
 
   useFrame(() => {
     if (venusRef.current) {
-      venusRef.current.rotation.y += 0.003; // Venus rotates slowly
+      venusRef.current.rotation.y += 0.002; // Venus rotates slowly
     }
   });
 

@@ -11,7 +11,7 @@ const UranusModel = () => {
 
   useFrame(() => {
     if (uranusRef.current) {
-      uranusRef.current.rotation.y += 0.006; // Slow rotation for Uranus
+      uranusRef.current.rotation.y += 0.002; // Slow rotation for Uranus
     }
     if (ringsRef.current) {
       ringsRef.current.rotation.x = Math.PI / 4; // Rotate the ring to be aligned correctly

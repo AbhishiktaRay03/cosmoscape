@@ -12,7 +12,7 @@ const SaturnModel = () => {
   // Rotate Saturn and its rings every frame
   useFrame(() => {
     if (saturnRef.current) {
-      saturnRef.current.rotation.y += 0.005; // Saturn's slow rotation
+      saturnRef.current.rotation.y += 0.003; // Saturn's slow rotation
     }
     if (ringsRef.current) {
       

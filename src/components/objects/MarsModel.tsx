@@ -10,7 +10,7 @@ const MarsModel = () => {
   // Rotate the Mars model every frame
   useFrame(() => {
     if (marsRef.current) {
-      marsRef.current.rotation.y += 0.005; // Adjust this value for faster/slower rotation
+      marsRef.current.rotation.y += 0.002; // Adjust this value for faster/slower rotation
     }
   });
 
