@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Facebook, Twitter, Linkedin, Instagram, Github } from "lucide-react";
 
 const Footer = () => {
   const [isMounted, setIsMounted] = useState(false);
@@ -14,24 +14,28 @@ const Footer = () => {
       <div className="max-w-screen-xl mx-auto px-2 md:px-6">
         <div className="flex flex-col md:flex-row justify-between items-center mb-2">
           <div className="flex items-center space-x-3">
-            {/* Placeholder for Logo */}
-            <div className="w-12 h-12 bg-gray-500"></div>
-            <span className="text-lg font-bold">Your Logo</span>
+            {/* Logo Image */}
+            <img
+              src="/images/logo.png"
+              alt="Logo"
+              className="w-12 h-12 object-contain" // Ensures the logo scales nicely inside the box
+            />
           </div>
+
           <ul className="flex space-x-5 text-sm font-medium mt-4 md:mt-0">
             <li>
               <a
-                href="https://www.facebook.com"
+                href="https://github.com/AbhishiktaRay03"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-gray-400"
               >
-                <Facebook size={24} />
+                <Github size={24} />
               </a>
             </li>
             <li>
               <a
-                href="https://www.twitter.com"
+                href="https://x.com/AbhishiktaRay03?t=j2rgP-6ndg5Vzw6FElWyGg&s=09"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-gray-400"
@@ -41,7 +45,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="https://www.linkedin.com"
+                href="https://www.linkedin.com/in/abhishikta-ray-321315258"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-gray-400"
@@ -51,7 +55,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="https://www.instagram.com"
+                href="https://instagram.com/abhishikta_ray2003?igshid=NGVhN2U2NjQ0Yg=="
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-gray-400"
@@ -61,7 +65,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
           <div>
             <h3 className="font-semibold mb-2">Quick Links</h3>
@@ -86,13 +90,8 @@ const Footer = () => {
           <div>
             <ul className="space-y-1">
               <li>
-                <Link href="/blogs" legacyBehavior>
+                <Link href="/blog" legacyBehavior>
                   <a className="hover:text-gray-400">Blogs</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/community" legacyBehavior>
-                  <a className="hover:text-gray-400">Community</a>
                 </Link>
               </li>
               <li>

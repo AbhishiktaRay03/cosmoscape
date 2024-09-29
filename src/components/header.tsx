@@ -14,8 +14,15 @@ const Header = () => {
         target="_blank"
         className="mr-auto"
       >
+        <Image
+          src="/images/logo.png"
+          alt="Cosmoscape Logo"
+          width={50}
+          height={50}
+          className="cursor-pointer ml-16"
+        />
       </Link>
-      <div className="justify-center gap-12 mx-auto my-2 font-extrabold text-xl hidden md:flex">
+      <div className="justify-center gap-16 mx-auto my-2 font-extrabold text-xl hidden md:flex">
         <Link
           href="/"
           className="font-normal hover:text-zinc-500 dark:hover:text-zinc-600 hover:transition-all hover:scale-110"

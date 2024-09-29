@@ -16,7 +16,7 @@ export const ContactForm: React.FC = () => {
 
       {/* Main Form Container */}
       <div className="flex-grow flex items-center justify-center mt-24 mb-24">
-        <div className="w-full max-w-3xl p-8 bg-white bg-opacity-10 backdrop-blur-lg border border-white border-opacity-30 rounded-lg shadow-xl">
+        <div className="w-full max-w-3xl p-8 bg-black bg-opacity-10 backdrop-blur-lg border-2 border-white border-opacity-30 rounded-lg shadow-xl">
           <h1 className="text-3xl text-white font-semibold text-center mb-8">
             Contact Us Form
           </h1>
