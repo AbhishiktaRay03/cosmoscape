@@ -54,7 +54,7 @@ const Header = () => {
         </Link>
         <div className="relative inline-flex items-center">
           <Link
-            href="/"
+            href="/cosmo"
             className="font-normal hover:text-zinc-500 dark:hover:text-purple-600 hover:transition-all hover:scale-110"
           >
             Cosmoguide
