@@ -6,7 +6,7 @@ import Footer from "../footer";
 export const ContactForm: React.FC = () => {
   return (
     <section
-      className="min-h-screen flex flex-col justify-between bg-cover bg-center"
+      className="min-h-screen flex flex-col justify-between bg-cover bg-center animate-fade-in-up"
       style={{
         backgroundImage: "url(/images/dark-sky.jpeg)",
       }}
