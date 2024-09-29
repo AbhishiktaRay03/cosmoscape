@@ -18,6 +18,10 @@ const config: Config = {
   
   theme: {
     extend: {
+      backdropBlur: {
+        sm: '24px',
+      },
+      
       fontFamily: {
         orbitron: ['Orbitron', 'sans-serif'],
       },

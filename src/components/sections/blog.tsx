@@ -19,17 +19,20 @@ export function Blog() {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   return (
-    <section className="bg-black min-h-screen pb-16 overflow-hidden" style={{
+    <section
+      className="bg-black min-h-screen pb-16 overflow-hidden animate-fade-in-up"
+      style={{
         backgroundImage: "url(/images/dark-sky.jpeg)",
         backgroundSize: "cover",
         backgroundPosition: "center",
-      }}>
+      }}
+    >
       {header()}
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-center mt-20 mb-12">
           <Button
             borderRadius="1.75rem"
-            className="bg-white dark:bg-slate-800 text-black dark:text-white border-transparent dark:border-slate-700 text-lg text-center py-3 px-8 cursor-none shadow-lg hover:shadow-xl transition-shadow duration-300"
+            className="bg-white dark:bg-slate-900 text-black dark:text-white border-transparent dark:border-slate-700 text-lg text-center py-3 px-8 cursor-none shadow-lg hover:shadow-xl transition-shadow duration-300"
           >
             Blogs and Insights
           </Button>

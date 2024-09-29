@@ -33,12 +33,12 @@ const About = () => {
           className="mb-16"
         >
           <h1 className="text-2xl md:text-4xl font-bold mb-4 mt-8 text-slate-300 text-center ">
-            About Cosmoscape
+            <span className="text-slate-600">About</span> Cosmoscape
           </h1>
           <div className="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-8">
             <div className="md:w-1/2">
               <Image
-                src="/images/saturn.jpg"
+                src="/images/dark-earth.png"
                 alt="Team collaboration"
                 width={400}
                 height={300}
@@ -49,7 +49,7 @@ const About = () => {
               <p className="text-lg mb-4 text-gray-300">
                 Cosmoscape is a team of passionate space enthusiasts and
                 educators dedicated to bringing the wonders of the universe to
-                everyone. Founded in 2023, we've been on a mission to make space
+                everyone. Founded in 2024, we've been on a mission to make space
                 exploration accessible and exciting for all.
               </p>
               <p className="text-lg text-gray-300">
@@ -69,9 +69,9 @@ const About = () => {
           className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16"
         >
           {[
-            { number: 2023, text: "Founded" },
-            { number: 1000, text: "Designs created" },
-            { number: 200, text: "Employees" },
+            { number: 2024, text: "Founded" },
+            { number: 1000, text: "Research help" },
+            { number: 200, text: "Reach" },
             { number: 190, text: "Countries reached" },
           ].map((stat, index) => (
             <div key={index} className="text-center">
@@ -93,13 +93,13 @@ const About = () => {
           animate={controls}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 mt-8 text-center text-gray-300">
-            Our goals
+          <h2 className="text-3xl md:text-4xl font-bold mb-2 mt-12 text-center text-gray-300">
+            <span className="text-slate-600">Our</span> goals
           </h2>
           <div className="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-8">
             <div className="md:w-1/2">
               <Image
-                src="/images/neptune.jpg"
+                src="/images/saturn-rem-bg.png"
                 alt="Team planning"
                 width={400}
                 height={300}

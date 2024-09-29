@@ -75,7 +75,7 @@ const Cosmo: React.FC = () => {
 
   return (
     <div
-      className="h-screen flex bg-black text-white relative"
+      className="h-screen flex bg-black text-white relative animate-fade-in-up"
       style={{
         backgroundImage: "url(/images/dark-sky.jpeg)",
         backgroundSize: "cover",
