@@ -93,7 +93,7 @@ export const projects: Project[] = [
     title: "SUN-the star!",
     description:
       "The Sun is the star at the center of the Solar System. It is a massive, nearly perfect sphere of hot plasma, heated to incandescence by nuclear fusion ",
-    link: "https://google.com",
+    link: "/",
     image: "/images/sun.jpg",
   },
   {

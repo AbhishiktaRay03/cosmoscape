@@ -107,10 +107,13 @@ const Footer = () => {
         </div>
         <hr className="my-3 border-gray-700" />
         <div className="flex flex-col md:flex-row justify-between items-center text-xs">
-          <span>© 2024 Cosmoscape. All Rights Reserved.</span>
+          <span>© 2025 Cosmoscape. All Rights Reserved.</span>
           <span>
             Made with ❤️ by{" "}
-            <a href="https://www.yourwebsite.com" className="hover:underline">
+            <a
+              href="https://abhishikta-portfolio.vercel.app/"
+              className="hover:underline"
+            >
               Abhishikta Ray
             </a>
           </span>

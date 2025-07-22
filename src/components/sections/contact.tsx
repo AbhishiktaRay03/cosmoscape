@@ -23,7 +23,7 @@ export const ContactForm: React.FC = () => {
 
           {/* Form */}
           <form
-            action="https://formspree.io/f/mldrqwab" // Replace with your Formspree form ID
+            action="https://formspree.io/f/mldrqwab" // Replace with Formspree form ID
             method="POST"
             className="space-y-6"
           >
